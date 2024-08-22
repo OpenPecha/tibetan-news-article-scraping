@@ -11,12 +11,18 @@ We need Tibetan news articles for training our machine translation model. This t
 
 ## Tibetan News Websites to be Extracted
 - https://vot.org/ (implemented)
+    - Audio related to the article
 - https://tibettimes.net/ (implemented)
+    - No Audio
 - https://www.voatibetan.com/ (implemented)
+    - Audio not that related
 - https://www.rfa.org/tibetan (implemented)
+    - Audio Seems related
 - http://bangchen.net/ (dead site)
 - http://bangchen.tibetexpress.net  (implemented)
+    - No Audio
 - https://www.gyalwarinpoche.com/ (implemented)
+    - No Audio
 
 ## Subtasks
 1. Implement a function to collect All article links from Website
