@@ -1,0 +1,24 @@
+{'Page བོད 1_Article_1': {'data': {'title': '',
+   'body': {'Audio': '', 'Text': []},
+   'meta_data': {'URL': 'https://vot.org/%e0%bd%96%e0%bd%bc%e0%bd%91%e0%bc%8b%e0%bd%91%e0%bd%84%e0%bc%8b%e0%bd%a7%e0%bd%b2%e0%bc%8b%e0%bd%98%e0%bc%8b%e0%bd%85%e0%bd%a3%e0%bc%8b%e0%bd%98%e0%bd%84%e0%bd%a0%e0%bc%8b%e0%bd%a6%e0%be%a1%e0%bd%ba/',
+    'Author': '',
+    'Date': '',
+    'Tags': []}},
+  'Message': "An error occurred while fetching the article: HTTPSConnectionPool(host='vot.org', port=443): Max retries exceeded with url: /%E0%BD%96%E0%BD%BC%E0%BD%91%E0%BC%8B%E0%BD%91%E0%BD%84%E0%BC%8B%E0%BD%A7%E0%BD%B2%E0%BC%8B%E0%BD%98%E0%BC%8B%E0%BD%85%E0%BD%A3%E0%BC%8B%E0%BD%98%E0%BD%84%E0%BD%A0%E0%BC%8B%E0%BD%A6%E0%BE%A1%E0%BD%BA/ (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x000002F4AF421CD0>: Failed to establish a new connection: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond'))",
+  'Response': 500},
+  ...
+  ...
+}
+
+
+Page བོད 1_Article_1
+Page བོད 1_Article_2
+Page བོད 1_Article_3
+Page བོད 1_Article_4
+Page བོད 1_Article_5
+Page བོད 1_Article_6
+Page བོད 1_Article_7
+Page བོད 1_Article_8
+Page བོད 1_Article_9
+total Failure in the གོང་ས་མཆོག article: 9
+
