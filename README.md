@@ -4,6 +4,11 @@ Develop scripts to efficiently scrape Tibetan news articles from multiple source
 ## Description
 We need Tibetan news articles for training our machine translation model. This task involves creating scripts to collect articles from various Tibetan news websites, beginning with VOT, and organizing them in a clear, structured format.
 
+## Data link:
+- https://drive.google.com/drive/folders/1AY8btr3ZHcocIg3U6wGQez_PpIyrnMTu?usp=sharing
+- **Note:** Only view access is granted to **Esukhia and Monlam AI** employees with the appropriate email extension.
+
+
 ## Completion Criteria
 - Scripts developed that can efficiently scrape **all the Tibetan news articles from VOT and other sources.**
 - Collected articles stored in a structured format (JSON) suitable for use in machine translation training.
