@@ -5,7 +5,7 @@ Develop scripts to efficiently scrape Tibetan news articles from multiple source
 We need Tibetan news articles for training our machine translation model. This task involves creating scripts to collect articles from various Tibetan news websites, beginning with VOT, and organizing them in a clear, structured format.
 
 ## Data link:
-- https://drive.google.com/drive/folders/1AY8btr3ZHcocIg3U6wGQez_PpIyrnMTu?usp=sharing
+- https://drive.google.com/drive/folders/170EW3j3150nbcioQrUEG0hBoxW-RabIg?usp=sharing
 - **Note:** Only view access is granted to **Esukhia and Monlam AI** employees with the appropriate email extension.
 
 
@@ -28,6 +28,11 @@ We need Tibetan news articles for training our machine translation model. This t
     - No Audio
 - https://www.gyalwarinpoche.com/ (implemented)
     - No Audio
+- https://bod.asia/ (implemented)
+
+## Tibetan to English Translation Websites to be Extracted:
+- https://linguatools.info/ (implemented)
+- https://app.glosbe.com/ (implemented)
 
 ## Subtasks
 1. Implement a function to collect All article links from Website
@@ -46,6 +51,7 @@ The scraped article link for each page is stored in a dictionary with the follow
 }
 
 ```
+
 
 The scraped data for each article is stored in a dictionary with the following structure:
 
@@ -69,29 +75,34 @@ The scraped data for each article is stored in a dictionary with the following s
 }
 ```
 
-#### types of error
-- title:
-    - Title not found
-    - None
-- Audio:
-    - No Audio in {TibetTimes}
-    - None
-    - 
-- Text:
-    - No Content in the article
-    - None
-    - Error fetching body content{str(e)}
-- Author:
-    - Error fetching author
-    - Author not found
-    - None
-- Date:
-    - Date not found
-    - Error fetching date
-    - None
-- 
-
-
+Language Translation format:
+```python
+translation_format = {
+        "data": {
+            "English": {
+                    'Word': "",
+                    'POS': "",
+                    'Sentence': ""
+                },
+                "Tibetan": {
+                    'Word': "",
+                    'phonetic': "",
+                    'Sentence': ""
+                },
+                "czech": {
+                    'Word': "",
+                    'Sentence': ""
+                },
+                "meta_data": {
+                    "Comment": "",
+                    "Source": ""
+                },
+                "Message": "Success"
+        },
+        "Message": "Success",
+        "Response": 200
+    }
+```
 
 ## Implementation Details
 Note: **Taking website example as VOT**
