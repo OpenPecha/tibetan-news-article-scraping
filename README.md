@@ -69,6 +69,29 @@ The scraped data for each article is stored in a dictionary with the following s
 }
 ```
 
+#### types of error
+- title:
+    - Title not found
+    - None
+- Audio:
+    - No Audio in {TibetTimes}
+    - None
+    - 
+- Text:
+    - No Content in the article
+    - None
+    - Error fetching body content{str(e)}
+- Author:
+    - Error fetching author
+    - Author not found
+    - None
+- Date:
+    - Date not found
+    - Error fetching date
+    - None
+- 
+
+
 
 ## Implementation Details
 Note: **Taking website example as VOT**
