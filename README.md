@@ -56,6 +56,57 @@ tibetan-news-article-scraping/
 └── README.md
 ```
 
+
+
+## Data Processing Pipeline
+
+### 1. Article Collection
+```mermaid
+graph LR
+    A[Website List] --> B[URL Extractor]
+    B --> C[Content Scraper]
+    C --> D[Raw Data]
+    D --> E[Validation]
+    E --> F[Storage]
+```
+
+### 2. Processing Steps
+1. **URL Collection**:
+   - Crawl website sections
+   - Extract article URLs
+   - Deduplication check
+   - URL validation
+
+2. **Content Extraction**:
+   - HTML parsing
+   - Text extraction
+   - Audio download (if available)
+   - Metadata collection
+
+3. **Data Processing**:
+   - Text cleaning (not done)
+   - Language detection (not done)
+   - Content validation (done)
+   - Format standardization (not done)
+
+4. **Storage**:
+   - JSON generation
+   - S3 upload
+   - Git commit
+   - Backup verification
+
+
+### 3. Article Analysis
+- Each source directory has an `analysis` file (e.g., `News_Articles/in_india_website/VOT/analysis`)
+- These files contain detailed statistics:
+  - Total articles downloaded
+  - Audio file download status
+  - Title counts
+  - Text content statistics
+  - Failed download records with reasons
+- Use these files to track scraping progress and identify issues
+
+
 ## Scraped News Sources
 |Source               |Region|Media Type |Repository Path                                  |S3 Path                                                    |Last Updated|Website                         |
 |---------------------|------|-----------|-------------------------------------------------|-----------------------------------------------------------|------------|--------------------------------|
